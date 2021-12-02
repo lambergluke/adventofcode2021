@@ -20,10 +20,7 @@ do
     five=$((i+2))
     six=$((i+3))
 
-    #if [[ $i -eq 0 ]]
-    #then
-    #    let test=0
-    #fi
+
     first=${arr[$one]}
     second=${arr[$two]}
     third=${arr[$three]}
@@ -31,10 +28,7 @@ do
     fifth=${arr[$five]}
     sixth=${arr[$six]}
 
-    #echo "one" $first
-    #echo "two" $second
-    #echo "three" $third
-    #sum1=$(($first + $second + $third))
+
     sum1=$(("${first//[[:space:]]/}" + "${second//[[:space:]]/}" + "${third//[[:space:]]/}"))
     sum2=$(("${fourth//[[:space:]]/}" + "${fifth//[[:space:]]/}" + "${sixth//[[:space:]]/}"))
 
